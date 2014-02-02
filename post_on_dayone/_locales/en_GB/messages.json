@@ -1,0 +1,10 @@
+{
+  "extDesc": {
+    "message": "Post on DayOne.app with selected text.",
+    "description": "Extension description"
+  },
+  "extTitle": {
+    "message": "Post on DayOne.app",
+    "description": "Title of contextMenus"
+  }
+}
