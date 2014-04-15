@@ -1,22 +1,33 @@
 {
-    "manifest_version": 2,
-    "name": "Post on DayOne",
-    "version": "0.0.1",
+  "manifest_version": 2,
+  "name": "Post on DayOne",
+  "version": "0.1",
 
-    "default_locale": "en_US",
-    "description": "__MSG_extDesc__",
-    "icons": {
-      "16": "icon/icon16.png",
-      "48": "icon/icon48.png",
-      "128": "icon/icon128.png"
-    },
+  "default_locale": "en",
+  "description": "__MSG_extDesc__",
+  "icons": {
+    "16": "icon/icon16.png",
+    "48": "icon/icon48.png",
+    "128": "icon/icon128.png"
+  },
 
-    "permissions": [
-      "activeTab",
-      "contextMenus"
-    ],
+  "permissions": [
+    "activeTab"
+  ],
 
-    "background": {
-      "scripts": ["js/background.js"]
+  "background": {
+    "scripts": ["js/background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": "icon/icon19.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end"
     }
+  ]
 }

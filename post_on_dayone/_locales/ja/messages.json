@@ -2,9 +2,5 @@
   "extDesc": {
     "message": "選択したテキストを DayOne.app に投稿",
     "description": "拡張機能の説明"
-  },
-  "extTitle": {
-    "message": "DayOne.app に投稿",
-    "description": "コンテキストメニューのタイトル"
   }
 }
