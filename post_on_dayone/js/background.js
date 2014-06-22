@@ -27,5 +27,5 @@ function dayone(title, url, text) {
   var body = '---\n\n' + text + '\n\n---\n';
   var footer = '![capture](http://capture.heartrails.com/300x200/cool?' + url + ')';
   var dayone = 'dayone://post?entry=' + encodeURIComponent(header + body + footer);
-  chrome.tabs.create({url: dayone});
+  chrome.tabs.update({url: dayone, selected: true});
 }
